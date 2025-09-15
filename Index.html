@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portifolio - Luiz</title>
+
+<!--adcionar estilo apartir de um arquivo css-->
+<link rel="stylesheet" type="text/css" href="estilo.css">
+
+</head>
+<body>
+
+<!-- banner-->
+<div class="banner">
+	<nav id="menuBanner">
+<!--	<img src="imagens/silhueta.jpeg" width="150">  = adicionar imagem no banner -->
+		<div class="menu">
+		<a href="Index.html">Home</a>
+		<a href="#Projetos Pessoais">Projetos Pessoais</a>
+		<a href="#Experiencia & Habilidades">Experiencia & Habilidades</a>
+		<a href="#Contato">Contato</a>
+		</div>
+	</nav>
+</div>
+<!--fim do banner-->
+<!--conteudo do site-->
+<div id="conteudo">
+	<br>
+	<p>
+	Hello World!
+	</p>
+		<p class="conteudo_destaque">
+		<b>
+		Seja bem vindo ao meu portifolio. Desenvolvedor/Designer!
+		</b>
+		<p>
+		Transformo ideias em realidade, criando soluções digitais inovadoras que impulsionam negócios e encantam usuários.
+		</p>
+	</p>
+	<div class="container">
+		<video autoplay loop muted playsinline  width="60%">
+  		<source src="imagens/RenderMax.webm" type="video/webm">
+  		Seu navegador não suporta vídeos WebM.
+		</video>
+	</div>
+<!--fim da apresentação-->
+	<hr> <!-- criar uma linha divisoria-->
+<!--projetos pessoais-->
+		<h1 id="Projetos Pessoais", class="conteudo_destaque">
+			<b>
+			Projetos Pessoais
+			</b>
+		</h1>
+<div class="caixa-imagem-organizacao">
+		<p class="paragrafo_caixa">
+			<br> <!-- quebra de linha -->
+			<div class="caixa-imagem1">
+			<a href="AbaEspacial/space_dangerous.html" target="_blank"><img src="AbaEspacial/img/pulsar_1x1.jpg" width="100%"></a> <!--target="_blank" para abrir em outra aba-->
+			</div>
+			<div class="caixa-imagem2">
+			<a href="AbaEspacial/space_dangerous.html" target="_blank"><b>Projeto2</b></a> <!--target="_blank" para abrir em outra aba-->
+			</div>
+			<div class="caixa-imagem3">
+			<a href="AbaEspacial/space_dangerous.html" target="_blank"><b>Projeto3</b></a> <!--target="_blank" para abrir em outra aba-->
+			</div>
+		</p>
+</div>
+<!--fim projetos pessoais-->
+
+<!--experiencia-->
+	<hr> <!-- criar uma linha divisoria-->
+	<p class="conteudo_destaque", id="Experiencia & Habilidades">
+		<b>
+		Habilidades e Experiencia
+		</b>
+	</p>
+<!-- conteudo dentro da experiencia-->
+<div class="container_boxes">
+		<!--Desenvolvimento Web-->
+		<div class="caixa">
+		<b>
+		Desenvolvimento Web (Front-end e Back-end)
+		</b>
+		<p class="paragrafo_caixa">
+		<br> <!-- quebra de linha -->
+		HTML & CSS
+		<br>
+		JavaScript
+		</p>
+		</div>
+		<!--fim Desenvolvimento Web-->
+
+		<!--Desenvolvimento aplicativos-->
+		<div class="caixa">
+		<b>
+		Desenvolvimento aplicativos (FullStack)
+		</b>
+		<p class="paragrafo_caixa">
+		<br> <!-- quebra de linha -->
+		Python
+		<br>
+		Java
+		<br>
+		C
+		</p>
+		</div>
+		<!--Fim Desenvolvimento aplicativos-->
+
+		<!--Ferramentas de Design-->
+		<div class="caixa">
+		<b>
+		Ferramentas de Design
+		</b>
+		<p class="paragrafo_caixa">
+		<br> <!-- quebra de linha -->
+		Blender
+		<br>
+		Photoshop
+		<br>
+		Unreal Engine
+		</p>
+		</div>
+		<!--fim Ferramentas de Design-->
+
+		<!--Formação Acadêmica-->
+		<div class="caixa">
+		<b>
+		Formação Acadêmica
+		</b>
+		<p class="paragrafo_caixa">
+		<br> <!-- quebra de linha -->
+		<b>Estacio</b> - Análise e Desenvolvimento de Sistemas
+		<br>
+		<b>Senai</b> - Assistente Administrativo
+		<br>
+		<b>Microlins</b> - Pacote Office 365
+		<br>
+		<b>Udemy</b> - Deep Learning
+		<br>
+		<b>EasyComp</b> - Informatica Comercial
+		</p>
+		</div>
+		<!--fim Formação Acadêmica-->
+</div>
+<!--fim conteudo dentro da experiencia-->
+<br>
+<br>
+		<!-- contato-->
+		<p id="Contato">
+			<!-- link github-->
+			<a href="https://github.com/LDave-afk?tab=repositories" target="_blank"> <img src="imagens/logo.jpg" width="5%"></a></a>
+			<!-- link linkedin-->
+			<a href="https://www.linkedin.com/in/luiz-davi-soares-425476371" target="_blank"><img src="imagens/logo2.png" width="5%"></a></a>
+			<!-- contatos-->
+			<img src="imagens/logo3.png" width="5%"
+    		alt="Copiar e-mail"
+     		style="cursor:pointer;" 
+     		onclick="copiarTexto('luiz.davi.silva4552@gmail.com')">
+			<div id="mensagem" style="display:none; color:green; font-weight:bold;"></div> <!--mensagem de confirmação-->
+		</p>
+</div>
+</div>
+<!--fim do conteudo site-->
+<!--rodape do site-->
+<footer>
+	<h4>
+	Todos os direitos reservado Luiz &copy;Copyright 2025.
+	</h4>
+</footer>
+<!--fim do site-->
+
+  <!-- Importando o JavaScript -->
+   <script src="script.js"></script>
+</body>
+</html>
