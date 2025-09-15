@@ -1,0 +1,193 @@
+html{
+	scroll-behavior: smooth;
+	}
+body{
+background: #201f91;
+/*   url('imagens/binarycodeBackground.png');     para usar imagem no fundo: */
+background-repeat: no-repeat; /* Evita que a imagem se repita */
+background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+font: 16px Arial, Helvetica, sans-serif;
+color: white;
+place-items: center;
+/* Zera margens e padding padrão do navegador */
+margin: 0;
+padding: 0;
+}
+
+/*adicionar estilo unico*/
+	.banner{ /*banner background imagem*/
+		width: 100%; /*largura do conteudo do banner*/
+		height: 150px; /*altura do conteudo até o banner*/
+	/*	background: url('');  colocar imagem de back */
+		background-size: cover;
+		background-position: center;
+	}
+
+	#menuBanner{
+		margin: 1px; /*espaçamento do menu ate a borda*/
+		padding: 10px;
+		width: 97,5%; /*largura do menu*/
+		height: 40%; /*altura do menu 150px sugerido*/
+		background: linear-gradient(to right, #16104d, #580606); /* Gradiente de cor */
+/*		border: 5px solid rgb(121, 9, 165); Largura, estilo e cor da borda*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu{
+		text-align: center;
+		margin: 0 auto; /*centralizar o menu*/
+		padding: 0;
+		width: 90%; /*largura do menu*/
+	/*	height: 40px; altura do menu 150px sugerido*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	#conteudo{
+	width: 90%; /* preenchimento do conteudo no site*/
+	/* width: 1200px; = largura do conteudo em redução*/
+	background-color: rgb(0, 0, 0);
+	box-shadow: 2px 2px 5px 5px gray; /*sombra*/
+	text-align: justify;
+  	box-sizing: border-box;
+	}
+
+	.conteudo_destaque{
+	font: 30px Arial, Helvetica, sans-serif;
+	background: linear-gradient(to right, #8375ff, #ff6b6b); /* Gradiente de cor */
+	background-clip: text; /* Versão padrão */
+	-webkit-background-clip: text; /* Para navegadores WebKit (Chrome, Safari, Edge) */
+	color: transparent; /* Alternativa padrão */
+	-webkit-text-fill-color: transparent; /* Torna o texto transparente no WebKit */
+	text-align: center; /*preenchimento do texto*/
+	margin: 10px auto;
+	padding: 20px;
+	}
+
+/* Estilo para as caixas lado a lado */
+.container_boxes{
+	display: flex;       /* coloca os filhos lado a lado */
+	gap: 10px;           /* espaço entre as caixas */
+	justify-content: center; /* centraliza no meio da tela */
+}
+.caixa {
+	font: 18px Arial, Helvetica, sans-serif;
+	color: rgb(255, 255, 255);
+	text-align: center; /*preenchimento do texto*/
+	background: linear-gradient(to right, #060131, #310101); /* Gradiente de cor */
+	border: 2px solid rgb(255, 255, 255); /* Largura, estilo e cor da borda*/
+	flex: 1;             /* todas terão mesmo tamanho */
+	max-width: 300px;    /* limite de largura */
+	margin: 10px auto; /* espaçamento entre as caixas e a borda */
+}
+.paragrafo_caixa{
+		font: 16px Arial, Helvetica, sans-serif;
+		color: rgb(255, 255, 255);
+		text-align: center; /*preenchimento do texto*/
+		margin: 10px auto;
+/*		padding: 5px;  espaçamento do texto (enter) */
+	}
+/*fim Estilo para as caixas lado a lado */
+
+	.container {
+  	display: flex;
+  	justify-content: center; /* alinha no eixo horizontal */
+  	align-items: center;     /* alinha no eixo vertical */
+	height: 60vh;           /* ocupa a altura inteira da tela */
+	}
+
+	#rodape{
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+	background: ffffff;
+	padding: 10px;
+	}
+
+	nav a{
+		display: inline-block;
+		color: #ffffff;
+/*		background: rgb(121, 9, 165);   */
+		text-decoration: none;
+		font-weight: bold;
+		padding: 10px;
+		margin: 0;
+		flex: 1;
+	}
+
+	nav a:hover{
+		color: rgb(255, 255, 0);
+		border: 2px solid rgb(255, 255, 0);
+		background: rgb(35, 2, 48);
+		transform: scale(1.2); /*aumentar imagem quando mouse passar em cima*/
+		transition: transform 0.3s ease; /*transição suave*/
+		cursor: pointer;
+	}
+
+	p{
+		color: rgb(211, 182, 248);
+		text-align: center; /*preenchimento do texto*/
+		margin: 10px auto;
+/*		padding: 20px; espaçamento do texto (enter)*/
+	}
+
+	h1{
+		color: gray(255, 255, 255);
+		font: Arial;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.img-interativa{
+		border: 10px solid black;
+		border: 30px;
+		display: block;
+		margin: 0 auto;
+		width: 100px;
+		transition: transition 0.5s ease-in-out;
+	}
+
+	.img-interativa:hover{
+	transform: scale(1.2); /*aumentar imagem quando mouse passar em cima*/
+	transition: transform 0.5s ease-in-out; /*transição suave*/
+	cursor: pointer;
+	}
+
+
+/*adicionar caixa com imagem*/
+.caixa-imagem-organizacao {
+    display: flex;          /* coloca os itens lado a lado */
+    justify-content: center; /* centraliza no meio da tela */
+    gap: 20px;              /* espaçamento entre os quadrados */
+    flex-wrap: wrap;        /* permite quebrar linha se faltar espaço */
+}
+
+.caixa-imagem1, .caixa-imagem2, .caixa-imagem3 { 
+    font: 18px Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center; 
+    border: 2px solid rgb(255, 255, 255); 
+    flex: 1;             
+    margin: 10px auto; 
+    background-size: cover;   /* cobre toda a caixa */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita repetição */
+    display: flex; /* para centralizar o texto/link */
+    align-items: center;
+    justify-content: center;
+}
+	.caixa-imagem1:hover{
+	transform: scale(1.1); /*aumentar imagem quando mouse passar em cima*/
+	transition: transform 0.5s ease-in-out; /*transição suave*/
+	cursor: pointer;
+	}
+
+	#mensagem{
+		text-align: center;
+		size: 40%;
+	}
+/* fim do estilo unico */
