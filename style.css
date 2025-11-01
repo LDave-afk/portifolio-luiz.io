@@ -48,7 +48,8 @@ padding: 0;
 
 
 	#conteudo{
-	width: 90%; /* preenchimento do conteudo no site*/
+	width: 90%; /* largura do conteudo no site*/
+	height: 90%; /* altura do conteudo no site*/
 	/* width: 1200px; = largura do conteudo em redução*/
 	background-color: rgb(0, 0, 0);
 	box-shadow: 2px 2px 5px 5px gray; /*sombra*/
@@ -180,7 +181,7 @@ padding: 0;
     align-items: center;
     justify-content: center;
 }
-	.caixa-imagem1:hover{
+	.caixa-imagem1:hover, .caixa-imagem2:hover, .caixa-imagem3:hover{
 	transform: scale(1.1); /*aumentar imagem quando mouse passar em cima*/
 	transition: transform 0.5s ease-in-out; /*transição suave*/
 	cursor: pointer;
